@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+.animation1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+    transition: transform 3s;
+    transition-timing-function: ease-out;
+    }
+.animation1:hover{
+    animation-name: colorchange;
+    animation-duration: 2s;
+    animation-delay: 1ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    transform: scale(2) translate(150px,150px);
+
+}
+@keyframes colorchange {
+    0%{background-color: white;}
+    20%{background-color: yellow}
+    30%{background-color: red;}
+    50%{background-color: green;}
+    70%{background-color: blue}
+    100%{background-color: white}
+}
